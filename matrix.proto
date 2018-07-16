@@ -4,9 +4,10 @@ syntax = "proto3";
 
 package matrix;
 
+// 按行构造
 message Matrix {
-    string col = 1;
-    string row = 2;
+    int32 col = 1;
+    int32 row = 2;
 
     repeated int32 e = 3;
 }
