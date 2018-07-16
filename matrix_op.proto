@@ -1,12 +1,12 @@
 
 syntax = "proto3";
 
-package matrix_op;
+package matrixop;
 
-import public "protos/matrix.proto";
+import "priv/protos/matrix.proto";
 
 
 service MatrixOp {
     // Sends a greeting
-    rpc echo (stream Matrix) returns (stream Matrix) {}
+    rpc echo (stream matrix.Matrix) returns (stream matrix.Matrix) {}
 }
