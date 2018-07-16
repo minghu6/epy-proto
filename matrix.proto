@@ -1,0 +1,12 @@
+
+
+syntax = "proto3";
+
+package matrix;
+
+message Matrix {
+    string col = 1;
+    string row = 2;
+
+    repeated int32 e = 3;
+}
