@@ -9,3 +9,17 @@ message Matrix {
 
     repeated int32 e = 3;
 }
+
+message Operator {
+    string value = 1;  // 
+    int32 factor_num = 2;  // 操作元数, 一元,二元
+}
+
+message MatrixOpRequest {
+    repeated Matrix matrixs = 1;
+    Operator op = 2;
+}
+
+message MatrixList {
+    repeated Matrix matrixs = 1;
+}

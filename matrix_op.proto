@@ -8,5 +8,7 @@ import "priv/protos/matrix.proto";
 
 service MatrixOp {
     // Sends a greeting
-    rpc echo (stream matrix.Matrix) returns (stream matrix.Matrix) {}
+    rpc Echo (stream matrix.Matrix) returns (stream matrix.Matrix) {}
+
+    rpc Op (matrix.MatrixOpRequest) returns (matrix.MatrixList) {}
 }

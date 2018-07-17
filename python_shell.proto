@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package python_shell;
+
+service PythonShell {
+    // Sends a greeting
+    rpc Eval (EvalRequest) returns (StringValue) {}
+}
+
+message StringValue {
+    string value = 1;
+}
+
+message EvalRequest {
+    string exec = 1;
+    string eval = 2;
+}
